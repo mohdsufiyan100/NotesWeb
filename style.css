@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 80%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.container{
+    background-color: rgb(37, 35, 35);
+    padding: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+#inp1{
+    width: 30.0rem;
+    height: 2.0rem;
+    font-size: 1.0rem;
+    padding-left: 1.0rem;
+    outline: none;
+    margin-top: 1.0rem;
+}
+#inp2{
+    width: 30.0rem;
+    height: 5.0rem;
+    font-size: 1.0rem;
+    padding-left: 1.0rem;
+    outline: none;
+    margin-top: 1.0rem;
+}
+#btn{
+    width: 10.0rem;
+    height: 3.0rem;
+    background-color: rgb(192, 136, 32);
+    font-size: 1.40rem;
+    outline: none;
+    margin-top: 1.0rem;
+    border: none;
+    border-radius: 0.30rem;
+}
+#btn:hover{
+    background-color: rgb(176, 185, 50);
+
+}
+.notes{
+    font-size: 1.80rem;
+    border: 0.10rem solid gray;
+    margin-top: 5.0rem;
+    margin-left: 2.0rem;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20.0rem;
+    height: 20.0rem;
+    border-radius: 1.0rem;
+    overflow: hidden;
+    cursor:zoom-in;
+}
+.showfullData{
+    overflow-y: scroll;
+    position: absolute;
+    background-color: black;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 35.0rem;
+    height: 40.0rem;
+}
+p{
+    margin-top: 1.50rem;
+    margin-left: 3.0rem;
+    text-align: left;
+    font-size: 1.70rem;
+}
+.icon{
+    background-color: rgb(192, 136, 32);
+    cursor:auto;
+}
+.fa-times-circle{
+    display: inline-flex;
+    float: left;
+    margin-left: 1.0rem;
+    cursor: pointer;
+}
+.fa-times-circle:hover{
+    color: red;
+}
+
+
+@media(max-width: 375px){
+    html{
+        font-size: 50%;
+    }
+
+    .container{
+        width: 40.0rem;
+        padding: 0.0rem;
+        padding: 1.0rem;
+    }
+    .notes{
+        margin-top: 5.0rem;
+        margin-left: 2.0rem;
+        width: 16.0rem;
+        height: 20.0rem;        
+    }
+    .showfullData{
+        overflow-y: scroll;
+        position: absolute;
+        background-color: black;
+        color: white;
+        left: 33%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 30.0rem;
+        height: 35.0rem;
+    }
+}
