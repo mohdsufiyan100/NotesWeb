@@ -17,9 +17,32 @@
         <textarea id="inp2" cols="1" rows="10" class="inpdata" placeholder="Type your note..."></textarea>
         <button id="btn">Create</button>
     </div>
-    <div class="notesarea"></div>
-    <div class="notescontent"></div>
+    <div class="searchArea">
+        <div id="search">
+            <input type="text" id="inpSearch" placeholder="Search notes..">
+            <i class="far fa-search" id="searchbtn"></i>
+            <button id="deleteAll"><i class="far fa-trash-alt"></i>  Delete ALL</button>
+        </div>
+        
+    </div>
+    <div id="plusExpand">
+        <i class="far fa-plus-circle"></i>
+    </div>
+    <div class="NoteYour">
+        <h1>Your Notes</h1>
+        <hr>
+    </div>
+    <div id="notesarea">
+    </div>
+    <div id = 'emptyarea'>
+        <i class="far fa-database"></i>
+        <h1>No data found</h1>
+        <p>Please type a Note..</p>
+    </div>
+    
+    <!-- <div class="notescontent"></div> -->
     <script src="./notes.js"></script>
+    <!-- <script src="./next.js"></script> -->
 </body>
 
 </html>

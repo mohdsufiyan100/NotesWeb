@@ -10,7 +10,8 @@ html{
 }
 .container{
     background-color: rgb(37, 35, 35);
-    padding: 1.0rem;
+    width: 100vw;
+    /*padding: 1.0rem;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +46,9 @@ html{
 #btn:hover{
     background-color: rgb(176, 185, 50);
 
+}
+#notesarea{
+    margin-left: 7.0rem;
 }
 .notes{
     font-size: 1.80rem;
@@ -91,6 +95,79 @@ p{
     color: red;
 }
 
+.NoteYour{
+    width: 70.0rem;
+    padding-left: 20.0rem;
+    padding-top: 2.0rem;
+    margin-top: -4.0rem;
+}
+#search{
+    padding-left: 44.0rem;
+    margin-top: 1.0rem;
+}
+#search input{
+    width: 17.0rem;
+    height: 1.70rem;
+    padding-left: 1.0rem;
+    outline: none;
+    
+}
+.fa-search{
+    background-color: black;
+    color: white;
+    padding: 0.50rem 1.50rem 0.50rem 1.50rem;
+    border-radius: 1.0rem;
+}
+.searchArea{
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+}
+#plusExpand{
+    display: none;
+}
+#notesarea{
+    padding-left: 1.0rem;
+}
+
+#deleteAll{
+    padding: 0.50rem 2.0rem 0.50rem 2.0rem;
+    margin-left: 10.0rem;
+    background-color: rgb(236, 112, 112);
+    outline: none;
+    border: 0.20rem solid rgb(0, 0, 0);
+    border-radius: 0.30rem ;
+}
+#deleteAll:hover{
+    background-color: rgb(211, 54, 54);
+    border: 0.20rem solid rgb(211, 54, 54);
+
+}
+#emptyarea{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+}
+#emptyarea p{
+    position: relative;
+    margin-left: -14.50rem;
+    margin-top: 3.0rem;
+}
+#emptyarea h1{
+    margin-left: 0.60rem;
+}
+#emptyarea .fa-database{
+    font-size: 6.0rem;
+    /* font-size: 32px; */
+    /* color: #9c47fc; */
+    display: block;
+    background: -webkit-linear-gradient(#8a2525, #577dc9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 @media(max-width: 375px){
     html{
@@ -101,6 +178,10 @@ p{
         width: 40.0rem;
         padding: 0.0rem;
         padding: 1.0rem;
+    }
+    #notesarea{
+        margin-left: 2.0rem;
+        margin-top: 3.0rem;
     }
     .notes{
         margin-top: 5.0rem;
@@ -119,4 +200,57 @@ p{
         width: 30.0rem;
         height: 35.0rem;
     }
+    .NoteYour{
+        width: 40.0rem;
+        margin-left: -18.0rem;
+        margin-top: -2.0rem;
+
+    }
+    #search{
+        display: none;
+    }
+    #search input{
+        width: 10.0rem;
+        height: 1.70rem;
+        padding-left: 0.50rem;
+        outline: none;
+        font-size: 1.30rem;
+        border: none;
+        border: 0.10rem solid black;
+        border-radius: 0.10rem;
+    }
+    .searchArea{
+        position: absolute;
+        top: 23%;
+        left: -75%;
+    }
+    #plusExpand{
+        display: block;
+        position: absolute;
+        left: 82%;
+        top: 24%;
+        font-size: 3.0rem;
+        /* transition: all 2s; */
+    }
+    .fa-search{
+        background-color: black;
+        color: white;
+        padding: 0.50rem 1.50rem 0.50rem 1.50rem;
+        border-radius: 1.0rem;
+    }
+    #deleteAll{
+        font-size: 1.30rem;
+        padding: 0.45rem 1.90rem 0.45rem 1.90rem;
+        margin-left: 1.0rem;
+        background-color: rgb(236, 112, 112);
+        outline: none;
+        border: 0.20rem solid rgb(0, 0, 0);
+        border-radius: 0.30rem ;
+    }
+    #deleteAll:hover{
+        background-color: rgb(211, 54, 54);
+        border: 0.20rem solid rgb(211, 54, 54);
+    
+    }
+
 }
