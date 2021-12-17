@@ -127,13 +127,13 @@ let expandsearch = document.getElementById('plusExpand');
 
 expandsearch.addEventListener('click', () => {
     let searchArea = document.getElementById('search');
-    if(searchArea.style.display == 'block'){
+    if(searchArea.style.display == 'inline-flex'){
         searchArea.style.display = 'none';
         let expandsearch = document.getElementById('plusExpand');
         expandsearch.style.transform = 'none';
     }
     else{
-        searchArea.style.display = 'block';
+        searchArea.style.display = 'inline-flex';
         let expandsearch = document.getElementById('plusExpand');
         expandsearch.style.transform = 'rotate(25deg)';
     }
