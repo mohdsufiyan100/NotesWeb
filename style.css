@@ -48,21 +48,28 @@ html{
 
 }
 #notesarea{
-    margin-left: 7.0rem;
+    padding-left: 10.0rem;
 }
-.notes{
-    font-size: 1.80rem;
-    border: 0.10rem solid gray;
-    margin-top: 5.0rem;
-    margin-left: 2.0rem;
+.fullElement{
     display: inline-flex;
     flex-direction: column;
     text-align: center;
     width: 20.0rem;
     height: 20.0rem;
+    font-size: 1.80rem;
+    border: none;
+    border: 0.10rem solid gray;
+    margin-left: 1.0rem;
+    margin-top: 3.0rem;
+    margin-bottom: -2.0rem;
     border-radius: 1.0rem;
-    overflow: hidden;
     cursor:zoom-in;
+    overflow: hidden;
+}
+.notes{
+    margin-top: 3.0rem;
+    /* padding: 1.0rem; */
+    height: 15.0rem;
 }
 .showfullData{
     overflow-y: scroll;
@@ -83,23 +90,74 @@ p{
 }
 .icon{
     background-color: rgb(192, 136, 32);
-    cursor:auto;
+    width: 20.10rem;
+    border-top-left-radius: 1.0rem;
+    border-top-right-radius: 1.0rem;  
+    cursor: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content:flex-end;
 }
 .fa-times-circle{
-    display: inline-flex;
-    float: left;
+    margin-right: 1.0rem;
     margin-left: 1.0rem;
     cursor: pointer;
 }
 .fa-times-circle:hover{
     color: red;
 }
+.fa-file-edit{
+    cursor: pointer;
+}
+#editnote{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #eeeff1;
+    width: 40.0rem;
+    height: 45.0rem;
+    display: none;
+    padding: 2.0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.editform{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+#editnoteClose{
+    display: inline-flex;
+    float: right;
+    font-size: 2.0rem;
+}
+#tital{
+    width: 20.0rem;
+    height: 3.0rem;
+    margin-bottom: 0.80rem;
+    margin-top: 1.0rem;
+}
+#txtarea{
+    height: 35.0rem;
+    width: 40.0rem;
+    overflow-y: scroll;
 
-.NoteYour{
+}
+#DT{
+    padding: 0.60rem 5.0rem;
+    margin-top: 0.50rem;
+    font-size: 1.60rem;
+    outline: none;
+    border: none;
+    background-color: rgb(125, 168, 60);
+}
+#NoteYour{
     width: 70.0rem;
     padding-left: 20.0rem;
     padding-top: 2.0rem;
     margin-top: -4.0rem;
+    /* margin-bottom: -5.0rem; */
 }
 #search{
     padding-left: 44.0rem;
@@ -126,9 +184,7 @@ p{
 #plusExpand{
     display: none;
 }
-#notesarea{
-    padding-left: 1.0rem;
-}
+
 
 #deleteAll{
     padding: 0.50rem 2.0rem 0.50rem 2.0rem;
@@ -167,8 +223,6 @@ p{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 @media(max-width: 375px){
     html{
         font-size: 50%;
@@ -194,7 +248,7 @@ p{
         width: 30.0rem;
         height: 35.0rem;
     }
-    .NoteYour{
+    #NoteYour{
         width: 40.0rem;
         margin-left: -18.0rem;
         margin-top: -1.0rem;

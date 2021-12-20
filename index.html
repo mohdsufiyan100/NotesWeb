@@ -12,6 +12,15 @@
 </head>
 
 <body>
+    <div id="editnote">
+        <i class="far fa-times-circle" id="editnoteClose"></i>
+        <h1>Edit your Note</h1>
+        <div class="editform">
+            <textarea id="tital" cols="30" rows="10" ></textarea>
+            <textarea id="txtarea" cols="30" rows="10" ></textarea>
+            <button id="DT">Edit</button>
+        </div>
+    </div>
     <div class="container">
         <input type="text" id="inp1" placeholder="Total">
         <textarea id="inp2" cols="1" rows="10" class="inpdata" placeholder="Type your note..."></textarea>
@@ -28,14 +37,13 @@
     <div id="plusExpand">
         <i class="far fa-plus-circle"></i>
     </div>
-    <div class="NoteYour">
+    <div id="NoteYour">
         <h1>Your Notes</h1>
         <hr>
     </div>
     
+    <div id="notesarea"></div>
     
-    <div id="notesarea">
-    </div>
     <div id = 'emptyarea'>
         <i class="far fa-database"></i>
         <h1>No data found</h1>
@@ -44,7 +52,7 @@
     
     <!-- <div class="notescontent"></div> -->
     <script src="./notes.js"></script>
-    <!-- <script src="./next.js"></script> -->
+    <!-- <script src="./txt.js"></script> -->
 </body>
 
 </html>
