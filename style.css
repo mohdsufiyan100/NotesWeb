@@ -8,6 +8,30 @@ html{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
+::-webkit-scrollbar {
+    width: 0.50rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 1.0rem;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(192, 185, 185); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e0dada; 
+  }
+
+
+
 .container{
     background-color: rgb(37, 35, 35);
     width: 100vw;
@@ -77,14 +101,21 @@ html{
     background-color: black;
     color: white;
     left: 50%;
-    top: 50%;
+    top: 42%;
     transform: translate(-50%,-50%);
-    width: 35.0rem;
-    height: 40.0rem;
+    width: 38.0rem;
+    height: 46.0rem;
+    transition: all 0.30s;
+    border: 0.30rem solid green;
+    padding-top: 2.0rem;
+    border-radius: 1.0rem;
+    scrollbar-track-color: aliceblue;
+    scrollbar-track-color: #8a2525;
 }
 p{
     margin-top: 1.50rem;
     margin-left: 3.0rem;
+    margin-right: 3.0rem;
     text-align: left;
     font-size: 1.70rem;
 }
@@ -126,6 +157,7 @@ p{
     flex-direction: column;
     display: flex;
     align-items: center;
+    transition: all 1s ease-in-out;
 }
 #editnoteClose{
     display: inline-flex;
@@ -190,14 +222,13 @@ p{
     padding: 0.50rem 2.0rem 0.50rem 2.0rem;
     margin-left: 10.0rem;
     background-color: rgb(236, 112, 112);
+    border-radius: 0.30rem rgb(236, 112, 112);
     outline: none;
-    border: 0.20rem solid rgb(0, 0, 0);
-    border-radius: 0.30rem ;
+    border: 0.20rem solid ;
 }
 #deleteAll:hover{
-    background-color: rgb(211, 54, 54);
+    background-color: rgb(236, 112, 112);
     border: 0.20rem solid rgb(211, 54, 54);
-
 }
 #emptyarea{
     display: none;
@@ -227,26 +258,21 @@ p{
     html{
         font-size: 50%;
     }
+    /* ::-webkit-scrollbar {
+        width: 5px;
+      } */
+
     #notesarea{
-        margin-left: 2.0rem;
+        margin-left: -6.0rem;
         margin-top: 3.0rem;
     }
-    .notes{
+    .fullElement{
         margin-top: 5.0rem;
-        margin-left: 2.0rem;
         width: 16.0rem;
         height: 20.0rem;        
     }
-    .showfullData{
-        overflow-y: scroll;
-        position: absolute;
-        background-color: black;
-        color: white;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        width: 30.0rem;
-        height: 35.0rem;
+    .icon{
+        width: 16.10rem;
     }
     #NoteYour{
         width: 40.0rem;
@@ -296,22 +322,39 @@ p{
         font-size: 1.30rem;
         padding: 0.45rem 1.90rem 0.45rem 1.90rem;
         margin-left: 1.0rem;
-        background-color: rgb(236, 112, 112);
         outline: none;
-        border: 0.20rem solid rgb(0, 0, 0);
         border-radius: 0.30rem ;
-    }
-    #deleteAll:hover{
-        background-color: rgb(211, 54, 54);
-        border: 0.20rem solid rgb(211, 54, 54);
-    
     }
     #emptyarea p{
         position: relative;
         margin-left: -12.50rem;
         margin-top: 3.0rem;
     }
-
+    #editnote{
+        /* position: absolute; */
+        top: 55%;
+        /* left: 50%; */
+        /* transform: translate(-50%,-50%); */
+        background-color: #eeeff1;
+        width: 40.0rem;
+        height: 45.0rem;
+        display: none;
+        padding: 2.0rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    .showfullData{
+        left: 50%;
+        top: 45%;
+        width: 43.0rem;
+        height: 80.0rem;
+        padding-top: 2.0rem;
+    }
+    p{
+        margin-top: 1.50rem;
+        margin-left: 3.0rem;
+        margin-right: 1.0rem;
+    }
 }
 
 @media(max-height: 385px){

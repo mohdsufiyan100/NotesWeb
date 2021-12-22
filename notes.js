@@ -110,8 +110,9 @@ function fullData(ind) {
     // let fully = `full${index}`;
     
     let notesdiv = document.getElementById(ind);
+    // let fulltext = document.getElementById(`ntt${ind}`);
     notesdiv.classList.toggle('showfullData');
-    notesdiv.style.cursor = 'zoom-out';
+    notesdiv.style.cursor = 'default';
 }
 
 function deleteNote(index) {
